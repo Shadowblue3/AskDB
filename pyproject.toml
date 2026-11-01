@@ -1,0 +1,36 @@
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "askdb"
+version = "0.1.0"
+description = "An extensible Python toolkit for converting natural language into SQL queries."
+readme = "README.md"
+requires-python = ">= 3.10"
+
+authors = [
+    { name = "Saptarshi Bhunia", email = "saptarshibhunia5@gmail.com" }
+]
+
+maintainers = [
+    { name = "Saptarshi Bhunia", email = "saptarshibhunia5@gmail.com" }
+]
+
+dependencies = []
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/askdb"]
